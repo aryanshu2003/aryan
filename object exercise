@@ -1,0 +1,50 @@
+// exercise 1
+let square = {
+    side : 5,
+    get area (){
+      return   this.side ** 2;
+    }
+}
+square.side = 10;
+console.log(square.area);
+
+// exercise 2
+// join function 
+//function stringConcat(seperator, ...strings){
+ // let returnVal = "";
+ // strings.forEach((String, i) => {
+   // if(i == string.length -1){
+  //    returnVal += string;
+   // }
+ //   else{
+//    returnVal += string + seperator;
+//  }
+ 
+//  })
+//  return returnVal;
+//}
+
+//console.log(stringConcat('+','this','is','valid'));
+
+// exercise 3
+arr = [1,2,3,4,5,6,7,8]
+let first =arr[0];
+let second = arr[1];
+let third = arr[2];
+let other = arr.slice(3);
+console.log(first,second,third,other);
+//
+function matchHouses(step){
+   if(step === 0){
+    return 0;
+   } else{
+    return (step * 6) - ( step -1);
+   }
+}
+
+
+
+
+console.log(matchHouses(1));
+console.log(matchHouses(4));
+console.log(matchHouses(87));
